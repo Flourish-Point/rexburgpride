@@ -1,0 +1,23 @@
+---
+import { ThemeToggle } from "../interactive/ThemeToggle";
+---
+
+<header class="top-nav">
+  <a class="logo" href="/"></a>
+  <div class="buttons">
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+    </label>
+    <nav class="menu">
+      <a class="rainbow" href="/get-involved">Get Involved</a>
+      <a class="rainbow" href="/lets-walk">Walk Registration</a>
+      <a class="rainbow" href="https://flourishpoint.org/store">Rainbow Store</a
+      >
+      <a class="rainbow" href="/memories">Memories</a>
+      <a class="rainbow" href="/donate">Give Today</a>
+      <a class="rainbow" href="/resources">LGBTQ+ Resources</a>
+    </nav>
+    <ThemeToggle client:load />
+  </div>
+</header>

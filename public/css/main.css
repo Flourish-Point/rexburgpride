@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@import url("./fonts.css");
+@import url("./theme.css");
+@import url("./classes.css");
+@import url("./elements.css");
+@import url("./effects.css");
+@import url("./header.css");
+@import url("./marquee.css");
+@import url("./footer.css");
+
+* {
+  font-family: red-hat-text;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+body > * {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  max-width: 1600px;
+}
+
+footer {
+  max-width: 1600px;
+}
+
+main {
+  flex-grow: 1;
+  padding-left: 0;
+  padding-right: 0;
+}

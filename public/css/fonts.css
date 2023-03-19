@@ -1,0 +1,9 @@
+@font-face {
+  font-family: playfair-display;
+  src: url("/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: red-hat-text;
+  src: url("/fonts/RedHatText-VariableFont_wght.ttf");
+}

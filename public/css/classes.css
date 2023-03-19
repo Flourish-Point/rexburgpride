@@ -1,0 +1,98 @@
+/* Button */
+.simple-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  background: var(--bg);
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--bg-sec);
+
+  transition: background 200ms ease-in;
+}
+
+.simple-button:hover {
+  background: var(--bg-hover);
+}
+
+/* Sponsors */
+.sponsor {
+  background: var(--light-bg);
+  color: var(--text-dark);
+
+  max-width: 200px;
+  max-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+
+  border-radius: 0.25rem;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.sponsor:hover {
+  transform: scale(1.05);
+}
+
+.sponsor img {
+  width: 100%;
+  max-height: 100px;
+}
+
+/* icons used in footer */
+.icon-pack {
+  margin: 0;
+  text-align: center;
+}
+
+.icon-pack * {
+  margin: 0;
+  display: inline;
+  max-height: 2rem;
+  font-size: 12px;
+}
+
+/* misc */
+
+.centered-caption {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 900px;
+  background: var(--bg);
+  opacity: 88%;
+  padding: 1rem;
+  text-align: justify;
+  border-radius: 0.25rem;
+}
+
+.jumbo {
+  position: relative;
+  max-height: 600px;
+}
+
+.jumbo-back {
+  max-height: 600px;
+
+  width: 100%;
+
+  object-position: 50% 40%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .centered-caption {
+    left: auto;
+    transform: translateY(-50%);
+    margin-top: 0;
+  }
+}
